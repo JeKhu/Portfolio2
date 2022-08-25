@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    /* ===== Font ===== */
+    --main-font: 'Poppins', sans-serif;
+    --second-font: 'Aladin', cursive;
+
+    /* ===== Color ===== */
+    --main-color: #00C2FF;
+    --second-color: #282828;
+    --third-color: #FFFFFF;
+    --body-color: #121212;
+
+    /* ===== Font Weight ===== */
+    --font-reguler: 400;
+    --font-semibold: 600;
+    --font-bold: 700;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--main-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 200px;
+    padding-left: 200px;
+    background-color: var(--body-color);
+}
+
+.header {
+    display: flex;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-family: var(--second-font);
+    color: var(--third-color);
+    font-size: 50px;
+}
+
+.logo a span {
+    color: var(--main-color);
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header ul li {
+    margin: 0 18px;
+}
+
+.header ul li a {
+    font-weight: var(--font-semibold);
+    font-size: 18px;
+    color: var(--third-color);
+}
+
+.header ul li a:hover {
+    color: var(--main-color);
+}
+
+.header .active {
+    color: var(--main-color);
+}
