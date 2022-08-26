@@ -188,4 +188,6 @@ h3.professional span {
 
 .home .home-img img {
     height: 430px;
+    margin: auto;
+    border-radius: 5px;
 }
