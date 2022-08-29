@@ -43,6 +43,7 @@ html {
     max-width: 1100px;
     width: 100%;
     margin: auto;
+    margin-bottom: 120px;
 }
 
 .row {
@@ -68,6 +69,35 @@ html {
 
 .btn:hover {
     transform: scale(1.05);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    position: relative;
+    font-size: 35px;
+    color: var(--third-color);
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+
+.section-title h2.about-me::before {
+    content: '';
+    height: 10px;
+    width: 130px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-left: 463px;
 }
 
 /* ===== HEADER ===== */
@@ -128,7 +158,7 @@ nav {
 
 /* ===== Home ===== */
 .home {
-    min-height: 110vh;
+    padding-top: 180px;
     display: flex;
     color: var(--third-color);
 }
@@ -190,4 +220,124 @@ h3.professional span {
     height: 430px;
     margin: auto;
     border-radius: 5px;
+}
+
+/* ===== About ===== */
+
+.about {
+    display: flex;
+    color: var(--third-color);
+}
+
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text p {
+    font-size: 18.7px;
+}
+
+.about .about-content .personal {
+    flex: 0 0 55%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal .info-item p {
+    font-weight: var(--font-semibold);
+    font-size: 17px;
+    padding: 12px 0;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.about .about-content .personal .info-item p span {
+    font-weight: var(--font-reguler);
+}
+
+.about .about-content .personal .buttons {
+    margin-top: 70px;
+}
+
+.about .about-content .personal .buttons .btn {
+    font-size: 16px;
+    border-radius: 30px;
+    margin-left: 250px;
+}
+
+.about .about-content .education {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: var(--second-color);
+}
+
+.about .about-content h3.title {
+    font-size: 26px;
+    font-weight: var(--font-bold);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.about .about-content .education .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .education .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.about .about-content .education .timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--main-color);
+}
+
+.about .about-content .education .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.about .about-content .education .timeline-date {
+    font-weight: var(--font-reguler);
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.about .about-content .education .timeline-date i {
+    color: var(--main-color);
+    padding-right: 10px;
+}
+
+.about .about-content .education .timeline-title {
+    font-size: 17px;
+    font-weight: var(--font-bold);
+    margin-bottom: 5px;
+}
+
+.about .about-content .education .timeline-text {
+    font-size: 17px;
+    font-weight: var(--font-reguler);
 }
