@@ -39,6 +39,11 @@ html {
     padding-right: 15px;
 }
 
+.padd-50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .container {
     max-width: 1100px;
     width: 100%;
@@ -89,6 +94,7 @@ html {
     text-align: center;
 }
 
+/* ===== about me ===== */
 .section-title h2.about-me::before {
     content: '';
     height: 10px;
@@ -98,6 +104,18 @@ html {
     top: 100%;
     left: 0;
     margin-left: 463px;
+}
+
+/* ===== skills ===== */
+.section-title h2.skills::before {
+    content: '';
+    height: 10px;
+    width: 95px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-left: 473px;
 }
 
 /* ===== HEADER ===== */
@@ -225,7 +243,6 @@ h3.professional span {
 /* ===== About ===== */
 
 .about {
-    display: flex;
     color: var(--third-color);
 }
 
@@ -266,7 +283,7 @@ h3.professional span {
 }
 
 .about .about-content .personal .buttons {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .about .about-content .personal .buttons .btn {
@@ -288,6 +305,7 @@ h3.professional span {
     font-weight: var(--font-bold);
     text-align: center;
     padding-top: 15px;
+    margin-bottom: 15px;
 }
 
 .about .about-content .education .timeline-item {
@@ -340,4 +358,71 @@ h3.professional span {
 .about .about-content .education .timeline-text {
     font-size: 17px;
     font-weight: var(--font-reguler);
+}
+
+/* ===== Skills ===== */
+.skills {
+    color: var(--third-color);
+}
+
+.skills .skills-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.skills .skills-content .skills-box {
+    background-color: var(--second-color);
+    border-radius: 15px;
+}
+
+.skills .skills-content h3 {
+    font-size: 24px;
+    font-weight: var(--font-bold);
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills .skills-content .uixdesign {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.skills .skills-content .skills-box .uix-text {
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+
+.skills .skills-content .skills-box .uix-point h4 {
+    font-size: 17px;
+    font-weight: var(--font-reguler);
+}
+
+.skills .skills-content .skills-box .uix-point i {
+    font-size: 20px;
+    color: var(--main-color);
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.skills .skills-content .frontend {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.skills .skills-content .skills-box .fe-text {
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+.skills .skills-content .skills-box .fe-point1 h4 {
+    font-size: 17px;
+    font-weight: var(--font-reguler);
+}
+
+.skills .skills-content .skills-box .fe-point1 i {
+    font-size: 20px;
+    color: var(--main-color);
+    padding-right: 20px;
+    padding-bottom: 25.8px;
 }
